@@ -1,0 +1,249 @@
+.nav_Elements ul{
+    width: 100vw;
+    height: 4.4rem;
+    padding: 0 0.5rem;
+    background: transparent;
+    border-bottom: 1px solid rgb(192, 191, 191);
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1.4fr 2.4fr 1.2fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+    position: fixed;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    align-items: center;
+    
+}
+/* .nav_Elements{
+} */
+.elements{
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.elements>li{
+    padding: 0 1rem;
+    backdrop-filter: blur(10px);
+}
+.elements>li>a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.elements>li>a:hover{
+    color:#b71540;  
+}
+.dark-mode{
+    text-decoration: none;
+    color: black;
+    width: 8rem;
+    background-color: white;
+    border-radius: 20%;
+    width: fit-content;
+    cursor: pointer;
+}
+.logo{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dark_mode{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 0rem 0rem;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+  }
+  
+  .sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* .switch:hover */.sun svg {
+    animation: rotate 15s linear infinite;
+  }
+  
+  @keyframes rotate {
+   
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* .switch:hover */.moon svg {
+    animation: tilt 5s linear infinite;
+  }
+  
+  @keyframes tilt {
+   
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-10deg);
+    }
+  
+    75% {
+      transform: rotate(10deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .input:checked + .slider {
+    background-color: #183153;
+  }
+  
+  .input:focus + .slider {
+    box-shadow: 0 0 1px #183153;
+  }
+  
+  .input:checked + .slider:before {
+    transform: translateX(30px);
+  }
+
+.togle-icon{
+    display: none;
+}
+
+.user-name{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #cc133c;;
+}
+
+@media screen and (max-width:600px) {
+    .nav_Elements ul{
+        display: grid;
+        grid-auto-flow: column dense;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1.4fr 2.4fr ;
+        grid-template-rows: 1fr;
+
+    }
+    .elements{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 4rem;
+        perspective:130px
+    }
+
+
+    .elements li{
+        box-shadow: -2rem 4rem 3rem rgba(0, 0, 0, 0.2);
+        width: 100%;
+        animation: identifier 200ms ease forwards;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+    .elements li:nth-child(2){
+        animation-delay: 100ms;
+    }
+    .elements li:nth-child(3){
+        animation-delay: 200ms;
+    }
+    .elements li:nth-child(4){
+        animation-delay: 300ms;
+    }
+
+
+    
+    .elements a{
+        padding: 1.3rem 4.5rem;
+        display: block;
+        background-color: rgb(235, 225, 225);
+
+    }
+    .elements a:hover{
+        background-color: rgb(99, 91, 91);
+        
+    }
+
+    .dark_mode{
+        justify-content: end;
+    }
+
+    .togle-icon{
+        display: inline-block;
+        padding: 0 1rem;
+        margin: 0 2rem;
+    }
+    @keyframes identifier {
+        to{
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+}

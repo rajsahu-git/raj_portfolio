@@ -1,0 +1,189 @@
+.section-elements{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.section-name{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.loader {
+    font-size: 2em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+  .loader > * {
+    color: black;
+  }
+  .loader span {
+    display: inline-flex;
+    padding: 0 1rem;
+  }
+  .loader span:nth-child(2) {
+    letter-spacing: 1em;
+
+    /* overflow: hidden; 
+     animation: reveal 3000ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+      alternate; */
+  }
+  @keyframes reveal {
+    0%,
+    100% {
+      opacity: 0.5;
+      letter-spacing: -1em;
+    }
+    50% {
+      opacity: 1;
+      letter-spacing: 0em;
+    }
+  }
+  
+
+
+.section-elements>li{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border:0.55px solid red; */
+    height: 9rem;
+    border-radius: 27px;
+    /* background: #e0e0e0; */
+    background: #9D50BB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow:  14px 14px 17px #c5c5c5,
+    -14px -14px 17px #fbfbfb;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.element {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #ffff;
+    border: 2px solid #808e9b;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .element::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-color: #2f3542; */
+    /* color:#dfe4ea; */
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .element:hover::before {
+    scale: 3;
+  }
+  
+  .element:hover {
+    color: #dfe4ea;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .element:active {
+    scale: 1;
+  }
+  .js-logo img{
+    width: 3rem;
+  }
+
+  .js-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .python-logo img{
+    width: 3rem;
+  }
+
+  .python-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .react-logo img{
+    width: 3rem;
+  }
+
+  .react-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .django-logo img{
+    width: 3rem;
+  }
+
+  .django-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tailwind-css-logo img{
+    width: 4rem;
+  }
+
+  .tailwind-css-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .css-logo img{
+    width: 3rem;
+  }
+
+  .css-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .html-logo img{
+    width: 3rem;
+  }
+
+  .html-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .git-logo img{
+    width: 3rem;
+  }
+
+  .git-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

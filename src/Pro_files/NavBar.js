@@ -5,9 +5,7 @@ import './NavBar.css'
 
 
 const NavBar=()=>{
-    // const [isDarkMode, setIsDarkMode] = useState(true)
     const [isToggle,setIsToggle] = useState(false)
-    // const width = window.innerWidth
     
     return (
         <div className='nav_Elements'>

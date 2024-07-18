@@ -1,7 +1,8 @@
 import NavBar from "./NavBar"
 import Header from "./Header"
 import Skill from "./Skill"
-import My_work from "./My_work"
+import MyWork from "./MyWork"
+import Blog from "./Blog"
 
 
 function Home(){
@@ -10,7 +11,9 @@ function Home(){
             <NavBar />
             <Header />
             <Skill/>
-            <My_work/>
+            <MyWork/>
+            <Blog/>
+            {/* <Footer/> */}
             {/*About me
             Projects
             Contact me

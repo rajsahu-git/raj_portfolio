@@ -23,7 +23,7 @@ const NavBar=()=>{
             {isToggle &&
             <span className='elements'>
                 <li className='home'><Link to={"/"}>Home </Link></li>
-                <li className='blog'><Link to={"/blog"}>Blog</Link> </li>
+                {/* <li className='blog'><Link to={"/blog"}>Blog</Link> </li> */}
                 <li className='contact'><Link to={"/contact"}>Contact</Link> </li>
                 <li className='about-me'><Link to={"/about"}>About me</Link> </li>
             </span>}

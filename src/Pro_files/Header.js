@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import pic from '../assets/images/pic.png'
+import resume from '../assets/images/RAJ-KUMAR-SAHU.pdf'
 
 function Header() {
   return (
@@ -28,7 +29,7 @@ function Header() {
 </button>
 
 <div class="button">
-  <a href="buton#" className="anchor">
+  <a href={resume} target="_blank" rel="noopener noreferrer" className="anchor">
     <span>Download CV</span>
   </a>
 </div>

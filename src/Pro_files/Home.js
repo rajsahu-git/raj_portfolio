@@ -4,7 +4,6 @@ import Skill from "./Skill"
 import MyWork from "./MyWork"
 import Blog from "./Blog"
 import Footer from "./Footer"
-
 function Home(){
     return(
         <div>
@@ -14,6 +13,7 @@ function Home(){
             <MyWork/>
             <Blog/>
             <Footer/>
+            {/* <Contact/> */}
             {/*About me
             Projects
             Contact me

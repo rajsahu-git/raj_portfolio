@@ -128,7 +128,7 @@
   .btn-4:active {
     transform: translateY(1px);
     box-shadow: none;
-  }
+;  }
   
 
 
@@ -140,13 +140,3 @@
 
 
 
-/* .netflix{
-    border-radius: 7px;
-    background: #e0e0e0;
-    box-shadow:  -24px 24px 49px #c5c5c5,
-             24px -24px 49px #fbfbfb;
-    width: 45%;
-    margin: 1rem;
-    transition: .3s;
-    position: relative;
-} */

@@ -41,3 +41,22 @@
 .paraghaph{
     width: 70%;
 }
+
+@media screen and (max-width:600px) {
+    .about-heading{
+        margin-top: 5rem;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .aboutMe{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

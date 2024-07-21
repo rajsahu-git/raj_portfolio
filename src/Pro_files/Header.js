@@ -13,7 +13,7 @@ function Header() {
                 <p className='paragraph'>I am a web developer specializing in building soft tech.I like making fun, interactive things with code.</p>
             </div>
             <div className='buttons'>
-            <button class="btn-1">
+            {/* <button class="btn-1">
   <div class="original">Contact</div>
   <div class="letters">
     
@@ -26,7 +26,7 @@ function Header() {
     <span>T</span>
 
   </div>
-</button>
+</button> */}
 
 <div class="button">
   <a href={resume} target="_blank" rel="noopener noreferrer" className="anchor">
